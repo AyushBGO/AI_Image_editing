@@ -97,7 +97,6 @@ async def content_aware(file: UploadFile = File(...)):
 
 
 @app.post("/add-shadow/")
-@app.post("/add-shadow/")
 async def shadow_add(file: UploadFile = File(...)):
     try:
         temp_path = f"{TEMP_DIR}/{uuid.uuid4().hex}_{file.filename}"
